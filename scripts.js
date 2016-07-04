@@ -62,7 +62,7 @@ $(document).ready(function() {
     function searchWeather(city) {
         $(".error").hide();
         $(".loader").show();
-        $.getJSON("http://api.openweathermap.org/data/2.5/weather", {
+        $.getJSON("https://api.openweathermap.org/data/2.5/weather", {
             "q": city,
             "units": "metric",
             "apikey": "5557fb723ced09517bc5551cd212e30a"
@@ -75,7 +75,7 @@ $(document).ready(function() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function(position) {
                 var coords = position.coords;
-                $.getJSON("http://api.openweathermap.org/data/2.5/weather", {
+                $.getJSON("https://api.openweathermap.org/data/2.5/weather", {
                     "lat": coords.latitude,
                     "lon": coords.longitude,
                     "units": "metric",
