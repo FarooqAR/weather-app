@@ -1,0 +1,112 @@
+body{
+    font-family: "Raleway",Helvetica, sans-serif;
+    background-color:  #00796B;
+    color: #fff;
+}
+a:link, a:visited{
+    text-decoration: none;
+}
+svg path,
+svg rect{
+  fill: #004940;
+}
+.loader{
+    display: none;
+}
+.btn{
+    color: #00796B;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+.btn:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+.btn:active{
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+}
+h1,h2{
+    font-weight: 100;
+}
+.error{
+    color: #004940;
+    display: none;
+}
+.general{
+    text-align: center;
+    margin-top: 1em;
+}
+#weather-icon{
+    margin: 10px;
+    font-size: 5em;
+}
+/*general*/
+.location-input-wrapper{
+    margin: 1em;
+    
+}
+.location-input-wrapper *{
+    font-size: 2em;
+    outline: none;
+    border: none;
+    font-family: inherit;
+}
+input#location{
+    padding: 5px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+input#location.disabled{
+    color: #fff;
+    background: transparent;
+}
+.btn-search-location{
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    background-color: #004940;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.btn-search-location .fa{
+    padding: 8px;
+}
+.unit{
+    cursor: pointer;        
+    text-transform: uppercase;
+}
+/*details controls*/
+.details-btn-container{
+    text-align: center;
+    border-bottom: 2px solid #004940;
+}
+.btn-details{
+    color: #fff;
+}
+.btn-details .fa{
+    color: #004940;
+}
+.hcol{
+    width: 50%;
+    float: left;
+}
+.hcol:first-child{
+    width: 70%;
+}
+.hcol:last-child{
+    text-align: right;
+    width: 30%;
+}
+.details{
+    font-size: 1.5em;
+    display: none;
+}
+.details > div{
+    width: 60%;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 10px 0;
+}
