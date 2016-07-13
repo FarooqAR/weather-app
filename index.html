@@ -13,7 +13,7 @@
 <body>
     <div class="general">
         <i id="weather-icon" class="wi wi-clouds"></i>
-        <div class="location-input-wrapper"><input id="location" placeholder="Enter city name" type="text" class="disabled" value="London, UK"><button class="btn-search-location" id="btn-search-location"><i class="fa fa-search"></i></button></div>
+        <div id="location"></div>
         <div class="loader loader--style1" title="0">
             <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
                 <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
@@ -32,9 +32,13 @@
             </svg>
         </div>
         <div class="error">There is an error</div>
-        <h2 id="temprature"><span id="temp" class="temp">23</span> &deg;<span id="unit" class="unit">C</span></h2>
+        <h2 id="temprature"><span id="temp" class="temp">80</span> &deg;<span id="unit" class="unit">F</span></h2>
     </div>
     <div class="details">
+        <div>
+            <div class="hcol">Summary:</div>
+            <div class="hcol"><span class="summary"></span></div>
+        </div>
         <div>
             <div class="hcol"><span class="wi wi-humidity"></span> Humidity:</div>
             <div class="hcol"><span class="humidity"></span></div>
@@ -42,10 +46,6 @@
         <div>
             <div class="hcol"><span class="wi wi-barometer"></span> Pressure:</div>
             <div class="hcol"><span class="pressure"></span></div>
-        </div>
-        <div>
-            <div class="hcol"><span class="wi wi-thermometer"></span> Min/Max Temperature:</div>
-            <div class="hcol"><span class="minmax"></span></div>
         </div>
         <div>
             <div class="hcol"><span id="direction" class="wi wi-wind-direction"></span> Wind:</div>

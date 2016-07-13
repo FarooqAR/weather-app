@@ -13,25 +13,8 @@ svg rect{
 .loader{
     display: none;
 }
-.btn{
-    color: #00796B;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
-}
-.btn:hover{
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
-}
-.btn:active{
-    box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
-}
 h1,h2{
     font-weight: 100;
-}
-.error{
-    color: #004940;
-    display: none;
 }
 .general{
     text-align: center;
@@ -46,33 +29,12 @@ h1,h2{
     margin: 1em;
     
 }
-.location-input-wrapper *{
+#location{
+    padding: 5px;
     font-size: 2em;
     outline: none;
     border: none;
-    font-family: inherit;
-}
-input#location{
-    padding: 5px;
-    outline: none;
-    border: none;
     text-align: center;
-}
-input#location.disabled{
-    color: #fff;
-    background: transparent;
-}
-.btn-search-location{
-    position: relative;
-    padding: 0;
-    overflow: hidden;
-    background-color: #004940;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-}
-.btn-search-location .fa{
-    padding: 8px;
 }
 .unit{
     cursor: pointer;        
